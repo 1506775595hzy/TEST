@@ -1,0 +1,24 @@
+
+ <view class="contain">
+    <!-- <view class="moon1"> -->
+    <image class='moon'
+    src='/image/moon.png'>
+   </image>
+   <!-- </view> -->
+
+<view class="pack">
+   <input   placeholder="每日佳话，每日清言" bindinput="getMood" class="mood"></input>
+   <button class="jump" bindtap="upload">每日一句</button>
+    <button class="jump" bindtap="get">留给自己</button>
+  </view>
+	<modal 
+		title="回馈"
+		confirm-text="进入专注"
+		cancel-text="再给自己一句话" 
+		hidden="{{modalHidden}}" 
+		bindconfirm="yjump" 
+		bindcancel="switchModal">
+	 你的语言积极度{{positive}}/1
+	</modal>
+</view>
+

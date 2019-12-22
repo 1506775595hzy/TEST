@@ -1,0 +1,62 @@
+<view class="container timer {{isRuning ? 'timer--runing': ''}}">
+
+	<view class="timer_main">
+
+  	<!-- 旋转卫星 -->
+   <image class="star"src="/image/star2.png" animation='{{donghua}}'>
+   </image>
+   <view class="hidden"  wx:if="{{!isRuning}}">
+   </view>
+   <view class="hidden"  wx:if="{{completed}}">
+   </view>
+
+   <!-- 底层星星 -->
+   <view class="manyStars" style='width:1200rpx;height: 100vh;background:#000;'>
+   <canvas canvas-id="canvas" style='width:1200rpx;height: 100vh'></canvas>
+   </view> 
+
+   <!-- 显示剩余时间 -->
+	 <view class="timer_time-wrap">
+   <picker mode="selector"  class="top"
+    value="{{index}}" range="{{array}}"
+    wx:if="{{!isRuning}}"
+    bindchange="bindTimeChange">
+     <text class="timer_time">{{array[index]}}:00
+    </text>
+  </picker>
+<!-- <view class="tip"  wx:if="{{!isRuning}}  ">
+<text>点击时间调整</text></view> -->
+
+
+     <text  class="timer_time {{isRuning && completed == false ? '' : 'hide'}}">{{remainTimeText}}</text>
+
+     <image wx:if="{{completed}}"  
+     class="cmpt"src="/image/complete.png"></image>
+
+   </view>
+
+   <!-- 两个按钮 -->
+  	<view class="timer_footer">
+	    <view 
+	    	bindtap="startTimer" 
+	    	data-type="work" 
+	    	class="timer_ctrl {{isRuning && timerType == 'rest' ? 'hide' : ''}}" >
+        {{isRuning ? '结束': '工作'}}
+      </view>
+	    <view 
+	    	bindtap="startTimer" 
+	    	data-type="rest" 
+	    	class="timer_ctrl {{isRuning && timerType == 'work' ? 'hide' : ''}}" >
+        {{isRuning  ? '结束': '休息'}}
+      </view>
+	  </view>
+    
+ 	</view>
+</view>
+
+<view class='music {{on? "on": ""}}'>
+    <image src='../../image/rotary.png' style='width: 60rpx;height: 60rpx;' bindtap='stop'></image>
+</view>
+<view class='think'>
+    <image src='../../image/planet.png' style='width: 60rpx;height: 60rpx;' bindtap='think'></image>
+</view>

@@ -1,0 +1,55 @@
+page{
+  background-size:100% 110%; 
+  background-image: url(http://pic.51yuansu.com/backgd/cover/00/06/61/5b683ee8480f8.jpg!/fw/260/quality/90/unsharp/true/compress/true) ;
+  background-color:#1d1616
+}
+
+/* .moon1{
+  text-align: center;
+} */
+
+.moon{
+  width: 600rpx;
+  height: 550rpx;
+  position: absolute;
+  top:4%;
+  left:10%;
+  z-index: -1;
+  font-size: 35rpx;
+}
+
+.pack{
+    padding-top: 450rpx;
+}
+
+.mood{
+  text-align: center;
+  height: 30px;
+  color: #dddddd;
+}
+.jump {
+  /* width: 80%; */
+  margin-top: 100rpx;
+  /* background-color: rgb(32, 69, 170); */
+  /* color: white; */
+  /* border-radius: 98rpx; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+	color:#fff;
+  background-color:  transparent;
+  height: 85rpx;
+  font-size: 35rpx;
+  width: 40%;
+  margin-bottom: 70rpx;
+  border: 1px dashed #dedede;
+  border-radius: 20px;  
+}
+.pos-number{
+  text-align: center
+}
+.result{
+  text-align: center
+}

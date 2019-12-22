@@ -1,0 +1,59 @@
+.container{
+	padding-bottom: 50px;
+	max-height: 92%;
+  background-size:100% 100%; 
+  background-image: url(http://pic.51yuansu.com/backgd/cover/00/06/61/5b683ee8480f8.jpg!/fw/260/quality/90/unsharp/true/compress/true) ;
+}
+.log {
+	color: #999;
+	margin: 15px 10px;
+}
+.log_item{
+	padding: 15px 5px;
+}
+.log_item text {
+	padding-right: 20px;
+}
+.clear{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+  text-align: center;
+}
+.clear .clear_btn {
+	margin: 20rpx;
+	/* height: 35px; */
+	/* line-height: 35px; */
+	color:#fff;
+	/* background-color: #fd8f58; */
+	/* border-radius: 2px; */
+  background-color:  transparent;
+  /* rgb(0, 0, 0); */
+  height: 85rpx;
+  font-size: 35rpx;
+  width: 40%;
+  margin-bottom: 70rpx;
+  border: 1px dashed #dedede;
+  border-radius: 20px;  
+}
+
+.nodata{
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+	height: 200rpx;
+  /* background-color: black;  */
+
+}
+
+.nodata_img{
+	display: block;
+	width: 130rpx;
+	height: 130rpx;
+}
+
+.nodata_text{
+	color:#dedede;
+	font-size: 12px;
+	padding-left: 10px;
+}
