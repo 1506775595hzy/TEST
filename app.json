@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/clock/clock",
+    "pages/record/record",
+    "pages/todos/todos"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "专注宝",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#20B2AA",
+    "borderStyle": "black",
+    "backgroundColor": "#1d1616",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/kind.png",
+        "selectedIconPath": "image/kindselect.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/todos/todos",
+        "iconPath": "image/diary.png",
+        "selectedIconPath": "image/diaryselect.png",
+        "text": "计划簿"
+      },
+      {
+        "pagePath": "pages/record/record",
+        "iconPath": "image/diary.png",
+        "selectedIconPath": "image/diaryselect.png",
+        "text": "记录"
+      }
+    ]
+  },
+  
+  "requiredBackgroundModes": ["audio"],
+  "sitemapLocation": "sitemap.json"
+}
